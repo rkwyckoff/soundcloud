@@ -28,6 +28,7 @@ function placeBox(data) {
 
 function boxTemplate(product) {
   return `
+
         <div class="resultsBox">
           <img src= "${product.artwork_url}">
           <div class="title"> ${product.title}</div>
