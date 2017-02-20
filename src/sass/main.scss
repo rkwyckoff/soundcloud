@@ -5,10 +5,10 @@
 
 
 .container {
-  height:1400px;
+  // height:1400px;
   width: 1050px;
   margin: 20px auto;
-  border: 1px solid lightgrey;
+  
 }
 
 .header {
@@ -42,31 +42,56 @@
   height: 150px;
   width: 900px;
   margin: 10px auto;
-  border: 1px solid grey;
-  //position:relative;
 
-  .artist {
+  .searchArtist {
   width: 700px;
   height: 50px;
   border: 2px solid grey;
-  margin: 40px 0px;;
+  margin: 40px 0px;
+  float: left;
   }
 
   .searchButton {
-    height: 50px;
+
     width: 150px;
     border: 2px solid grey;
-    float: right;
+    float: left;
     border-radius: 6px;
     background: lightgrey;
     font-size: 30px;
     text-align: center;
-    padding-top: 5px;
-    //position: absolute;
-  }
+    margin: 40px 0 40px 15px;
+    padding: 5px 0;
+    }
 }
 
 .results {
   width: 1050px;
+  overflow: hidden;
 
+  .resultsBox{
+    width: 20%;
+    height: 225px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+
+    img {
+      text-align: center;
+      width: 100px;
+    }
+
+    .title {
+      color: blue;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px 0px;
+    }
+
+    .artist {
+      color: black;
+      text-align: center;
+      font-size: 18px;
+    }
+}
 }
