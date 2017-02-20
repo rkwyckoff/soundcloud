@@ -8,7 +8,9 @@
   // height:1400px;
   width: 1050px;
   margin: 20px auto;
-  
+  background: rgb(245,245,245);
+  padding-top: 20px;
+
 }
 
 .header {
@@ -43,15 +45,20 @@
   width: 900px;
   margin: 10px auto;
 
-  .searchArtist {
-  width: 700px;
-  height: 50px;
-  border: 2px solid grey;
-  margin: 40px 0px;
-  float: left;
+
+  .searchField {
+    width: 732px;
+    height: 50px;
+    border: 2px solid grey;
+    margin: 40px 0px;
+    float: left;
+    font-size: 24px;
+    color: black;
+    padding-left: 20px;
+
   }
 
-  .searchButton {
+    .searchButton {
 
     width: 150px;
     border: 2px solid grey;
