@@ -20,6 +20,7 @@ function makeRequest(query) {
 }
 
 function placeBox(data) {
+//console.log(data)
 
   for (var i=0; i < data.length; i++) {
 
@@ -38,20 +39,30 @@ function boxTemplate(product) {
   return `
     <div class="resultsBox" stream_url="${product.stream_url}">
       <img src="${product.artwork_url}">
-      <div class="title"> ${product.title}</div>
+      <div class="title" id = "title1"> ${product.title}</div>
       <div class="artist"> ${product.user.username}</div>
     </div>`;
 }
 
 function getStream (event) {
   $('.player').empty();
+
+  //console.log(event.currentTarget)
   var url = `${event.currentTarget.attributes.stream_url.value}?client_id=${token}`;
-  console.log(url);
+//  console.log(url);
+  //var nowPlaying1 = document.getElementById('title1');
+  //console.log(document.getElementById('title1'))
+  //var nowPlaying2 = document.getElementById('label1');
+  //nowPlaying1.innerHTML = nowPlaying2.innerHTML;
+  $("#label1").append($(this).text());
   var audio  = document.createElement('audio');
   audio.src  = url;
   audio.id = 'audioPlayer';
   audio.autoplay = true;
+  audio.controls = true;
   $('.player').append(audio);
+
+
 }
 
 function searchButton() {

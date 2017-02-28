@@ -19,7 +19,7 @@
 
 
   p {
-    font-size: 44px;
+    font-size: 60px;
     text-align: center;
     font-weight: bold;
     margin: 20px auto;
@@ -29,19 +29,18 @@
 .player {
   height: 40px;
   width: 900px;
-  margin: 10px auto;
+  margin: 20px auto;
   border: 1px solid grey;
 }
-  p {
 
-    font-size: 16px;
-    margin-left: 75px;
-  }
-
-
+#label1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 75px;
+  color: red;
+}
 
 .search {
-  height: 150px;
   width: 900px;
   margin: 10px auto;
 
@@ -50,7 +49,7 @@
     width: 732px;
     height: 50px;
     border: 2px solid grey;
-    margin: 40px 0px;
+    margin: 22px 0px;
     float: left;
     font-size: 24px;
     color: black;
@@ -67,7 +66,7 @@
     background: lightgrey;
     font-size: 30px;
     text-align: center;
-    margin: 40px 0 40px 15px;
+    margin: 22px 0 40px 15px;
     padding: 5px 0;
     }
 }
@@ -75,17 +74,18 @@
 .results {
   width: 1050px;
   overflow: hidden;
+  padding: 0px 60px;
 
   .resultsBox{
-    width: 20%;
-    height: 225px;
+    width: 25%;
+    //height: 225px;
     float: left;
     overflow: hidden;
     text-align: center;
 
     img {
       text-align: center;
-      width: 100px;
+      width: 150px;
     }
 
     .title {
